@@ -1,4 +1,5 @@
-const http = require("http");
+const http = require("http"); //build module it just only a fucntion
+const gfName = require("./features"); //build module it just only a fucntion
 const server = http.createServer((req, resp) => {
   if (req.url === "/") {
     resp.end("home page");
@@ -19,3 +20,5 @@ const server = http.createServer((req, resp) => {
 server.listen(5000, () => {
   console.log("sreer wprk;ldgkj");
 });
+
+console.log(gfName);
